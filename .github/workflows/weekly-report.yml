@@ -28,6 +28,6 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" -X POST "$DISCORD_WEBHOOK_URL" \
           -d '{
-            "username": "小野寺葵 Bot",
+            "username": "筑紫栞 Bot",
             "content": "@everyone よかよか〜！今週の週次レポートばい更新されたっちゃん🎉\n\nプロジェクトの進捗とサマリば確認してみてね👇\nhttps://mctoka8low.github.io/linear-dashboard2/"
           }'
