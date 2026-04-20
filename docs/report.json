@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-04-20T07:44:58.706Z",
+  "weekFrom": "2026-04-20T00:00:00.000Z",
+  "weekTo": "2026-04-26T23:59:59.999Z",
+  "summary": {
+    "totalCompleted": 0,
+    "totalInProgress": 9,
+    "totalOverdue": 3,
+    "overallProgress": 16
+  },
+  "projects": [
+    {
+      "id": "7493ff4d-8b0e-4664-989f-6d64420800c0",
+      "name": "CI_4-5月でVRC既存＋20％",
+      "state": "backlog",
+      "progress": 10,
+      "totalIssues": 19,
+      "completedIssues": 1,
+      "completedThisWeek": [],
+      "overdue": [
+        {
+          "title": "【M1】Twitter広告アカウント・月次予算設定の準備",
+          "dueDate": "2026-04-20"
+        },
+        {
+          "title": "【M1】GA4 / BOOTHダッシュボードのKPIトラッキング設定",
+          "dueDate": "2026-04-20"
+        },
+        {
+          "title": "【M1】TOP20商品の最終優先度確定と担当割り当て",
+          "dueDate": "2026-04-20"
+        }
+      ]
+    },
+    {
+      "id": "8aefcdee-339b-45a1-81cc-e1ac83123d54",
+      "name": "VRC_MKTG",
+      "state": "backlog",
+      "progress": 25,
+      "totalIssues": 1,
+      "completedIssues": 0,
+      "completedThisWeek": [],
+      "overdue": []
+    },
+    {
+      "id": "51b7d190-9a79-4a89-9d34-77de50d042a3",
+      "name": "VRC_BOOTH戦略",
+      "state": "backlog",
+      "progress": 13,
+      "totalIssues": 6,
+      "completedIssues": 0,
+      "completedThisWeek": [],
+      "overdue": []
+    }
+  ],
+  "aiSummary": "## プロジェクト別週次サマリ\n\n### 1. CI_4-5月でVRC既存＋20％\n**進捗率：10%｜超過：3件**\n\n進捗が大幅に遅れており、3件の期限超過が発生中。早急な対応が必要。ボトルネックの特定と、タスクの優先順位見直しを今週中に実施すべき。リソース追加も検討。\n\n---\n\n### 2. VRC_MKTG\n**進捗率：25%｜超過：0件**\n\n3プロジェクト中最も順調。期限超過なく健全な状態を維持。現在のペースを継続しつつ、他プロジェクトへの支援可否も検討。\n\n---\n\n### 3. VRC_BOOTH戦略\n**進捗率：13%｜超過：0件**\n\n進捗は低いが超過はなし。計画初期段階の可能性あり。今後の加速に向け、マイルストーンの明確化が必要。\n\n---\n\n### 総括\n全体的に進捗率が低水準。特にCI案件は超過3件と要注意。今週は①CI案件の超過解消、②各プロジェクトの阻害要因洗い出しを優先事項とし、次週の改善を目指す。"
+}
