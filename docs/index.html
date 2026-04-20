@@ -1,2 +1,49 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>週次レポート</title></head><body><h1>週次レポート</h1><div id="app">読み込み中...</div><script>fetch("./report.json").then(r=>r.json()).then(d=>{document.getElementById("app").innerHTML="<p>レ
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>週次レポート</title>
+<style>
+body{font-family:sans-serif;max-width:960px;margin:0 auto;padding:2rem;background:#f7f6f3}
+h1{font-size:1.5rem;margin-bottom:1.5rem}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:2rem}
+.metric{background:#fff;border:1px solid #e5e3dc;border-radius:8px;padding:1rem}
+.metric-label{font-size:11px;color:#6b6963;margin-bottom:6px}
+.metric-value{font-size:26px;font-weight:600}
+.metric-value.danger{color:#E24B4A}
+.project{background:#fff;border:1px solid #e5e3dc;border-radius:10px;padding:1rem;margin-bottom:1rem}
+.progress-bar{height:6px;background:#eee;border-radius:99px;margin:8px 0}
+.progress-fill{height:6px;background:#1D9E75;border-radius:99px}
+.summary{background:#fff;border:1px solid #e5e3dc;border-radius:10px;padding:1.5rem;white-space:pre-wrap;line-height:1.8}
+.tag{font-size:10px;background:#EEEDFE;color:#534AB7;padding:2px 8px;border-radius:4px;margin-left:8px}
+</style>
+</head>
+<body>
+<h1>週次レポート <span id="week-label"></span></h1>
+<div id="metrics" class="metrics"></div>
+<h2>プロジェクト別進捗</h2>
+<div id="projects"></div>
+<h2>週次サマリ <span class="tag">Claude生成</span></h2>
+<div id="summary" class="summary">読み込み中...</div>
+<script>
+fetch('./report.json').then(r=>r.json()).then(d=>{
+  const f=new Date(d.weekFrom),t=new Date(d.weekTo);
+  document.getElementById('week-label').textContent=f.getMonth()+1+'/'+f.getDate()+'〜'+t.getMonth()+1+'/'+t.getDate();
+  const s=d.summary;
+  document.getElementById('metrics').innerHTML=
+    '<div class="metric"><div class="metric-label">完了（今週）</div><div class="metric-value">'+s.totalCompleted+'</div></div>'+
+    '<div class="metric"><div class="metric-label">進行中</div><div class="metric-value">'+s.totalInProgress+'</div></div>'+
+    '<div class="metric"><div class="metric-label">全体進捗</div><div class="metric-value">'+s.overallProgress+'%</div></div>'+
+    '<div class="metric"><div class="metric-label">期限超過</div><div class="metric-value'+(s.totalOverdue>0?' danger':'')+'">'+s.totalOverdue+'</div></div>';
+  document.getElementById('projects').innerHTML=d.projects.map(p=>
+    '<div class="project"><b>'+p.name+'</b> — '+p.progress+'%'+
+    '<div class="progress-bar"><div class="progress-fill" style="width:'+p.progress+'%"></div></div>'+
+    p.completedThisWeek.map(t=>'<span style="font-size:12px;margin-right:8px">✓ '+t.title+'</span>').join('')+
+    '</div>'
+  ).join('');
+  document.getElementById('summary').textContent=d.aiSummary||'サマリなし';
+}).catch(e=>{document.getElementById('summary').textContent='エラー: '+e.message});
+</script>
+</body>
+</html>
