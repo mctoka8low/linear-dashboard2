@@ -22,3 +22,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/report.json
           git diff --staged --quiet || git commit -m "chore: weekly report $(date +%Y-%m-%d)" && git push
+      - name: Notify Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          curl -H "Content-Type: application/json" -X POST "$DISCORD_WEBHOOK_URL" \
+          -d '{
+            "username": "小野寺葵 Bot",
+            "content": "よかよか〜！今週の週次レポートばい更新されたっちゃん🎉\n\nプロジェクトの進捗とサマリば確認してみてね👇\nhttps://mctoka8low.github.io/linear-dashboard2/"
+          }'
