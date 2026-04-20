@@ -12,7 +12,7 @@ function weekRange(){
   const sun=new Date(mon);sun.setDate(mon.getDate()+6);sun.setHours(23,59,59,999);
   return{from:mon.toISOString(),to:sun.toISOString()};
 }
-const data=await gql(`{projects(first:20){nodes{id name state progress issues(first:50){nodes{id title completedAt dueDate state{type} assignee{name}}}}}}}`);
+const data=await gql(`{projects(first:10){nodes{id name state progress issues(first:25){nodes{id title completedAt dueDate state{type} assignee{name}}}}}}`);
 const{from,to}=weekRange();
 const fromD=new Date(from),toD=new Date(to),today=new Date();
 let totalCompleted=0,totalInProgress=0,totalOverdue=0;
