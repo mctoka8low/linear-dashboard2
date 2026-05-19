@@ -1,61 +1,24 @@
 {
-  "generatedAt": "2026-05-12T10:02:45.519Z",
-  "weekFrom": "2026-05-11T00:00:00.000Z",
-  "weekTo": "2026-05-17T23:59:59.999Z",
+  "generatedAt": "2026-05-19T11:43:03.524Z",
+  "weekFrom": "2026-05-18T00:00:00.000Z",
+  "weekTo": "2026-05-24T23:59:59.999Z",
   "summary": {
     "totalCompleted": 0,
-    "totalInProgress": 8,
-    "totalOverdue": 4,
-    "overallProgress": 22
+    "totalInProgress": 4,
+    "totalOverdue": 0,
+    "overallProgress": 25
   },
   "projects": [
     {
-      "id": "7493ff4d-8b0e-4664-989f-6d64420800c0",
-      "name": "CI_4-5月でVRC既存＋20％",
+      "id": "49653f40-0094-40c7-b89a-ec5c6518c902",
+      "name": "BOOTH：CI_戦略",
       "state": "backlog",
       "progress": 25,
-      "totalIssues": 17,
-      "completedIssues": 4,
-      "completedThisWeek": [],
-      "overdue": [
-        {
-          "title": "【M2】Twitter広告キャンペーン開始（◎商品 上位6本）",
-          "dueDate": "2026-05-04"
-        },
-        {
-          "title": "【M2】Kagaribi Onsen（¥7,000）単品クリエイティブ強化",
-          "dueDate": "2026-05-04"
-        },
-        {
-          "title": "【M2】BOOTH商品ページ最適化（TOP5商品・サムネ・説明文改善）",
-          "dueDate": "2026-05-04"
-        },
-        {
-          "title": "【M2】Twitter有機投稿スタート（週3本ペース／◎商品ローテーション）",
-          "dueDate": "2026-05-04"
-        }
-      ]
-    },
-    {
-      "id": "8aefcdee-339b-45a1-81cc-e1ac83123d54",
-      "name": "VRC_MKTG",
-      "state": "backlog",
-      "progress": 13,
-      "totalIssues": 2,
+      "totalIssues": 4,
       "completedIssues": 0,
-      "completedThisWeek": [],
-      "overdue": []
-    },
-    {
-      "id": "51b7d190-9a79-4a89-9d34-77de50d042a3",
-      "name": "VRC_BOOTH戦略",
-      "state": "backlog",
-      "progress": 27,
-      "totalIssues": 12,
-      "completedIssues": 3,
       "completedThisWeek": [],
       "overdue": []
     }
   ],
-  "aiSummary": "## プロジェクト別週次サマリ\n\n### 1. CI_4-5月でVRC既存＋20％\n**進捗率：25％｜超過：4件**\n\n目標達成に向け4分の1まで進行。ただし、4件の期限超過タスクが発生しており、早急な対応が必要です。超過タスクの原因分析と担当者へのフォローアップを今週中に実施し、遅延解消を優先してください。\n\n---\n\n### 2. VRC_MKTG\n**進捗率：13％｜超過：0件**\n\n進捗率は低いものの、超過タスクはゼロで健全な状態です。計画通りの進行か、着手フェーズのため低進捗なのか確認が必要です。今後のマイルストーンを明確にし、進捗加速の可否を検討してください。\n\n---\n\n### 3. VRC_BOOTH戦略\n**進捗率：27％｜超過：0件**\n\n3プロジェクト中で最も高い進捗率かつ超過なし。順調に推移しています。このペースを維持しつつ、リソース余裕があればCI案件の遅延タスク支援も検討可能です。\n\n---\n\n### 総括\n全体的にCI案件の遅延対応が最優先課題。他2件は安定しているため、リソース再配分を視野に入れた調整を推奨します。"
+  "aiSummary": "## プロジェクト別週次サマリ\n\n### BOOTH：CI_戦略\n\n**進捗状況：25%完了**\n\n今週のBOOTH CI_戦略プロジェクトは、全体の4分の1が完了した段階です。計画に対して順調に進行しており、期限超過タスクは0件と、スケジュール管理が適切に行われています。\n\n**評価ポイント**\n- タスクの遅延がなく、チーム全体の進捗管理が良好\n- 初期フェーズとして妥当な進捗率\n\n**今後の注意点**\n- 残り75%の作業に向け、リソース配分の確認が必要\n- 次週以降も遅延ゼロを維持できるよう、依存関係のあるタスクを早期に特定することを推奨\n\n**総評**\n現時点では健全な状態です。この調子で進めていただければと思います。"
 }
