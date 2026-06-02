@@ -1,35 +1,24 @@
 {
-  "generatedAt": "2026-05-26T04:03:14.549Z",
-  "weekFrom": "2026-05-25T00:00:00.000Z",
-  "weekTo": "2026-05-31T23:59:59.999Z",
+  "generatedAt": "2026-06-02T04:27:05.519Z",
+  "weekFrom": "2026-06-01T00:00:00.000Z",
+  "weekTo": "2026-06-07T23:59:59.999Z",
   "summary": {
-    "totalCompleted": 2,
-    "totalInProgress": 2,
+    "totalCompleted": 0,
+    "totalInProgress": 0,
     "totalOverdue": 0,
-    "overallProgress": 63
+    "overallProgress": 100
   },
   "projects": [
     {
       "id": "49653f40-0094-40c7-b89a-ec5c6518c902",
       "name": "BOOTH：CI_戦略",
       "state": "backlog",
-      "progress": 63,
-      "totalIssues": 4,
-      "completedIssues": 2,
-      "completedThisWeek": [
-        {
-          "title": "メンズアバターの打率を上げる：何がささっているのか",
-          "completedAt": "2026-05-25T04:32:41.055Z",
-          "assignee": "ci@metaverse-creators.tokyo"
-        },
-        {
-          "title": "検討：BOOTH購入者の意思決定要因の要素＋重みづけ",
-          "completedAt": "2026-05-25T04:32:23.704Z",
-          "assignee": "渋沢生悟"
-        }
-      ],
+      "progress": 100,
+      "totalIssues": 3,
+      "completedIssues": 3,
+      "completedThisWeek": [],
       "overdue": []
     }
   ],
-  "aiSummary": "## プロジェクト別週次サマリ\n\n### BOOTH（CI_戦略）\n\n**進捗率：63%**\n\n今週はメンズアバター販売の成功要因分析に注力しました。「何がユーザーに響いているのか」を明確化するため、売上データとユーザー行動の相関調査を進めています。\n\n並行して、BOOTH購入者の意思決定要因について、各要素の洗い出しと重みづけの検討を実施中です。価格・デザイン・機能性・レビュー評価など、購買に影響する因子を体系的に整理し、優先度を定量化する作業を進めています。\n\n**特記事項：** 期限超過タスクは0件であり、スケジュール通りに推移しています。\n\n残り37%の完了に向け、来週は分析結果の取りまとめと施策への落とし込みを予定しています。"
+  "aiSummary": "## プロジェクト別週次サマリ\n\n### BOOTH\n**ステータス：完了**\n\n今週、CI_戦略タスクが100%完了し、計画通りに達成されました。超過案件は0件であり、スケジュール管理が適切に行われていたことを示しています。\n\n---\n\n### 総評\n\n今週は全プロジェクトが順調に進捗し、特にBOOTHのCI_戦略が予定通り完了した点は評価できます。超過案件がなかったことから、チームの工数見積もりと実行力が高い水準にあることが確認できました。\n\n来週以降は、次フェーズのタスク計画策定および新規課題の洗い出しを進め、引き続き遅延ゼロを維持していきましょう。"
 }
